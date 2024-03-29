@@ -1,0 +1,21 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:minmax(100px, auto);
+    gap: 50px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.menu-button{
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

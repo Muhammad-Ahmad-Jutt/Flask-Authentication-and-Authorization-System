@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+<div class="grid-container">
+<div class="grid-item">
+    <label for="username">Enter your username</label>
+    <input id="username" required>
+    <label for="password">Enter your password</label>
+    <input id="password" required>
+    <button class="menu-button" onclick='signIn()'>Sign In</button>
+</div>
+<div class="grid-item"><button class="menu-button" onclick='logout()'>Sign Out</button></div>
+<div class="grid-item"><button class="menu-button" onclick='check_status()'>Check Status</button></div>
+</div>
+<div>
+    <h1>Signed Info</h1>
+    <p id="signedInuser"></p>
+</div>
+
+
+
+
+<script src="{{url_for('static', filename='index.js')}}"></script>
+</body>
+</html>
